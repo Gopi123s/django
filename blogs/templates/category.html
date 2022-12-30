@@ -1,0 +1,33 @@
+{% extends 'basic.html'%}
+
+{%block title%} Home page {% endblock%}
+
+
+{% block content %} 
+<div class="container">
+    <h3>{{cat.title}}</h3>
+    <dic class="responsive-img">
+        <img src="/media/{{cat.image}}" alt="" style="width: 95%; height: 400px;">
+    </dic>
+
+
+    <ul class="collection">
+        {%for p in post%}
+        <a href="/blog/{{p.url}}" class="collection-item">{{p.title}}</a>
+
+
+        {% empty %}
+        <h3>No post in this category...</h3>
+        {%endfor%}
+      </ul>
+              
+
+
+
+
+
+
+</div>
+
+
+{% endblock%}

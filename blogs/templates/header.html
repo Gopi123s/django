@@ -1,0 +1,23 @@
+<!-- Dropdown Structure -->
+
+<ul id="dropdown1" class="dropdown-content">
+
+  {%for cat in cats%}
+    <li><a href="/category/{{cat.url}}">{{cat.title}}</a></li>
+    {%endfor%}
+    
+  </ul>
+  
+  <nav class="col-primary" style="position:sticky">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Gp Blogs</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About-Us</a></li>
+        <li><a href="/contact">Contact-Us</a></li>
+        <li><a href="/admin">Admin-login</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Category<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>

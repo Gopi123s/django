@@ -1,0 +1,37 @@
+{% extends 'basic.html'%}
+
+{%block title%} About-Us {% endblock%}
+
+
+{% block content %} 
+{% load static%}
+
+
+<div class="container mt">
+<div class="row">
+   
+      <div class="card col s12 m4">
+        <div class="card-image">
+          <img src="{% static 'img/gp.jpeg' %}">
+          <span class="card-title">Gp Blogs</span>
+        </div>
+        </div>
+       
+        <div class="card-content col s12 m8">
+            <h2>The largest web developer site on the internet.
+                3 billion pages displayed each year.
+                65 million visitors each month.</h2>
+
+                <div class="card-action center-align col-primary" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
+                    <h1><a href="/contact">Contact Us</a></h1>
+                  </div>
+          </div>
+         
+        </div>
+
+
+
+   
+  </div>
+</div>
+{% endblock%}
